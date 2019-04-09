@@ -1,13 +1,14 @@
 
 
-                                  Portable Backgammon Game (v0.4.5) 
-                                  - BETA PRE-RELEASE FOR TESTERS -
-                                       WWW.GARETHMURFIN.CO.UK
-                                            20/06/2010 
+                                  AI Backgammon Game (v0.0.1)
 
 
-INTRODUCTION:
+INTRODUCTION
 ------------------------------------------------------------------------------------------------
+
+To run application:
+
+$./gradlew run
 
 Video: https://youtu.be/Azts7E8-UK4
 
@@ -172,7 +173,8 @@ DUMB (current level), STUPID, AVERAGE, CRAFTY, GENIUS.
 TECHNICAL DETAILS
 ------------------------------------------------------------------------------------------------
 
-CLIENT
+**CLIENT**
+
 Client is written in Java, can be deployed as a "Webstart" application allowing it to run from a browser
 or it can be downloaded and run as standalone program from desktop. The client supports all operating 
 systems which have a Java run time environment, so good news for Mac and Linux users 
@@ -184,7 +186,8 @@ and http://www.alphasoftware.org/backgammon/serverip.txt for server ip, then use
 chat servlet running on tomcat server at <server ip>, local files are located on server in: 
 C:\apache-tomcat-6.0.18\webapps\ROOT\WEB-INF\classes\GammonChatServlet.class
 
-SERVER:
+**SERVER**
+
 Web server currently in use is TOMCAT 6.0.18, this runs the servlet GammonChatServlet, which is
 connected to by clients (who grab IP from serverip.txt) and also the web admin chat Applet
 
@@ -192,11 +195,3 @@ Programmer notes:
 Run C:\apache-tomcat-6.0.18\bin\startup.bat to start tomcat (http://localhost:8080/ will become active)
 Clients will grab ip from ipserver.txt then be able to connect.
 http://localhost:8080/chat2/GammonChatApplet.html is admin web chat
-
-DEVELOPER
-------------------------------------------------------------------------------------------------
-
-Freelance mobile developer available for hire, specialising in Java, J2ME, Android, iPhone, Blackberry.
-
-Developed by Gareth Murfin
-www.garethmurfin.co.uk
